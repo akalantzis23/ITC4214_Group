@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Grading Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="fa fa-graduation-cap"></i>
+                Grading Table
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row mt-30">
+            <div class="col">
+                <span class="display-3">Grading Table</span>
+            </div>
+        </div>
+        <div class="row mt-30">
+            <div class="col">
+                <label>Course</label>
+                <input type="text" class="form-control" placeholder="Course name" id="txt-course" />
+            </div>
+            <div class="col">
+                <label>Grade</label>
+                <input type="number" min="0" step="1" max="100" class="form-control"
+                    placeholder="Course grades between 0 to 100" id="txt-grade" />
+            </div>
+            <div class="col">
+                <button class="btn btn-primary btn-save" onclick="saveItem();">Save</button>
+            </div>
+        </div>
+        <div class="row mt-30">
+            <div class="col">
+                <table class="table table-stripe table-bordered table-striped">
+                    <thead>
+                        <th>
+                            Course
+                            <i id="btn-sort-course" class="fa fa-sort-alpha-down" onclick="sortByCourse();"></i>
+                        </th>
+                        <th class="text-center">
+                            Grade
+                            <i id="btn-sort-grade" class="fa fa-sort-numeric-down" onclick="sortByGrade();"></i>
+                        </th>
+                        <th class="text-center">Delete</th>
+                    </thead>
+                    <tbody id="tbl-data">
+                        <tr>
+                            <td colspan="3">No data found.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-light bg-light fixed-bottom">
+        <div class="container-fluid">
+            <div class="row w-100">
+                <div class="col text-start">
+                    Copyright reserved &copy; <i class="fa fa-graduation-cap m-1"></i>Grading Table Inc.
+                    <br/>
+                    Email us: <a href="mailto:i.skreki@acg.edu">e-mail</a>
+                </div>
+                <div class="col text-end">
+                    <a href="https://www.facebook.com/people/Achilleas-Kalantzis/100013418741601/" target="_blank"><i class="fab fa-facebook m-1"></i>Facebook</a>
+                    <a href="https://instagram.com/achilleaskalantzis?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram m-1"></i>Instagram</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
