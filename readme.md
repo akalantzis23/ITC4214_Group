@@ -9,19 +9,21 @@ We developed a project to satisfy the below requirements:
 	- A table of all of the things you've added.
 
 	- A delete button for each row of the table that lets you remove elements from 
-	the list.
+	  the list.
 
 	- A sorting feature, so you can sort entries in the table by a column of your 
-	   choice. 
+	  choice. 
 
-**B) an about page (formatted as the index page) with:**
+**B) About page (formatted as the index page) with:**
+
 	- a carousel
 	- grid cards with your names, avatars and short info. 
 
 **C) Both pages should:**
+
 	- Be formatted using a CSS framework of your choice
 	- Be responsive
 	- Have a Sticky Header section with your logo, title and menu for navigation to 
-	about page.
+	  about page.
 	- Have a footer section with your logo, copy-write information and sample 
-	   contact details (social media links etc) 
+	  contact details (social media links etc) 
