@@ -1,0 +1,38 @@
+.mt-100 {
+    margin-top: 100px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.btn-save {
+    margin-top: 25px;
+}
+.table i {
+    cursor: pointer;
+    margin-left: 10px;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.cards img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    float: left;
+    margin: 20px;
+}
