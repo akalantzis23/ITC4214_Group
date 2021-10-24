@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <i class="fa fa-graduation-cap"></i>
@@ -37,7 +37,7 @@
         </div>
     </nav>
     <div class="container">
-        <div class="row mt-30">
+        <div class="row mt-100">
             <div class="col">
                 <span class="display-3">Grading Table</span>
             </div>
@@ -46,11 +46,17 @@
             <div class="col">
                 <label>Course</label>
                 <input type="text" class="form-control" placeholder="Course name" id="txt-course" />
-            </div>
+		<div class="invalid-feedback">
+                    Please provide course name.
+                </div>
+		</div>
             <div class="col">
                 <label>Grade</label>
-                <input type="number" min="0" step="1" max="100" class="form-control"
+                <input type="number" min="0" step="1" max="100" maxlength="3" class="form-control"
                     placeholder="Course grades between 0 to 100" id="txt-grade" />
+		<div class="invalid-feedback">
+		    Grade should be between 0 and 100.
+		</div>
             </div>
             <div class="col">
                 <button class="btn btn-primary btn-save" onclick="saveItem();">Save</button>
